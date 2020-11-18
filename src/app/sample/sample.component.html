@@ -1,0 +1,5 @@
+<p>Sample Work</p>
+
+<div *ngFor="let make of makes">
+  <app-child [run]="make" (notify)="onNotified($event)"></app-child>
+</div>
